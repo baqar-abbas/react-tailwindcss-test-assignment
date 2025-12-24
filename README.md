@@ -1,20 +1,58 @@
-# react-tailwindcss-test-assignment
+## Setapp Landing (React + Tailwind + Vite)
 
-Test assignment project on React + Tailwind CSS using Figma design for UI implementation
+Live: https://react-tailwindcss-test-assignment.onrender.com/
 
-# React + Vite
+High-fidelity landing page built from Figma, featuring hero, feature grid, dual testimonial carousels, CTA, and a multi-column footer. Responsive, accessible, and deploy-ready on Render with SPA-friendly rewrites.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Preview
 
-Currently, two official plugins are available:
+![Preview 1](public/preview1.PNG)
+![Preview 2](public/preview2.PNG)
+![Preview 3](public/preview3.PNG)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Highlights
 
-## React Compiler
+- Pixel-perfect sections from the provided Figma: hero, feature grid, testimonial carousel, Setapp social carousel, CTA card, footer.
+- Embla-powered carousels with dots/arrows, responsive breakpoints, and accessible controls.
+- Scroll-to-top on route/hash change for smooth navigation.
+- Render-ready SPA rewrites so deep links refresh correctly.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Tech Stack
 
-## Expanding the ESLint configuration
+- React 19 + Vite
+- Tailwind CSS
+- embla-carousel-react (+ autoplay)
+- framer-motion (optional animations) - Not implemented due to time constraints
+- react-router-dom
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Getting Started
+
+```bash
+git clone <repo>
+cd react-tailwindcss-test-assignment
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+### Deployment (Render)
+
+- Ensure SPA rewrite: add `_redirects` in `public/` with `/*    /index.html   200` (or `static.json` with `{ "routes": { "/*": "index.html" } }`).
+- Deploy the Vite build output (`dist`) via Render’s static site.
+
+### Structure (key pieces)
+
+- `src/components/` — hero, feature grid, testimonial carousels, CTA, footer, scroll-to-top helper.
+- `public/preview*.PNG` — visual previews used above.
+
+### Notes
+
+- Animations are minimal and opt-in; keep them transform/opacity-only for performance and accessibility.
+- Fonts and colors follow the Figma spec; adjust in `tailwind.config.js` if needed.
