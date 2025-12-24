@@ -1,12 +1,13 @@
 import Hero from "../components/Hero";
-import FeaturesShowcase from "../components/FeaturesShowcase";
 import FeaturesGrid from "../components/FeaturesGrid";
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 const Homepage = () => {
   return (
     <main>
       <Hero />
       <FeaturesGrid />
+      <TestimonialCarousel />
     </main>
   );
 };

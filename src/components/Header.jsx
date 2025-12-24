@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/images/logo.svg";
+import flag from "../assets/images/nav-us-flag.svg";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,11 +28,7 @@ const Header = () => {
               className="flex-shrink-0 inline-flex"
               aria-label="Go to homepage"
             >
-              <img
-                src="/src/assets/images/logo.svg"
-                alt="Logo"
-                className="h-7 md:h-8 w-auto"
-              />
+              <img src={logo} alt="Logo" className="h-7 md:h-8 w-auto" />
             </Link>
 
             {/* Desktop Navigation - Hidden on mobile */}
@@ -51,11 +49,7 @@ const Header = () => {
 
             {/* Desktop CTAs - Hidden on mobile */}
             <div className="hidden md:flex items-center gap-5">
-              <img
-                src="/src/assets/images/nav-us-flag.svg"
-                alt="US Flag"
-                className="h-4 w-auto"
-              />
+              <img src={flag} alt="US Flag" className="h-4 w-auto" />
               <Link
                 to="/sign-in"
                 className="text-sm font-medium tracking-nav text-white hover:text-gray-300 transition-colors"

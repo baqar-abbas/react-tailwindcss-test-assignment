@@ -1,4 +1,18 @@
 import React from "react";
+import workWithPics from "../assets/images/headline-left-images/work-with-pics.svg";
+import c from "../assets/images/headline-left-images/macpaw-c.svg";
+import adblocker from "../assets/images/headline-left-images/ad-blocker.svg";
+import boostTeamwork from "../assets/images/headline-left-images/boost-teamwork.svg";
+import staySecure from "../assets/images/headline-left-images/stay-secure.svg";
+import logoBackground from "../assets/images/headline-logo-background.svg";
+import headlineLogo from "../assets/images/headline-logo.svg";
+import apple from "../assets/images/apple.svg";
+import google from "../assets/images/google.svg";
+import fixWifi from "../assets/images/headline-right-images/fix-wifi.svg";
+import planYourDay from "../assets/images/headline-right-images/plan-your-day.svg";
+import converter from "../assets/images/headline-right-images/converter.svg";
+import manageYourMac from "../assets/images/headline-right-images/manage-your-mac.svg";
+import codeEasier from "../assets/images/headline-right-images/code-easier.svg";
 
 const Hero = () => {
   return (
@@ -7,27 +21,27 @@ const Hero = () => {
         {/* Left stickers column */}
         <div className="relative hidden md:block pointer-events-none select-none">
           <img
-            src="/src/assets/images/headline-left-images/work-with-pics.svg"
+            src={workWithPics}
             alt="Work with pics"
             className="absolute left-[8px] top-[0px] h-[120px]"
           />
           <img
-            src="/src/assets/images/headline-left-images/macpaw-c.svg"
+            src={c}
             alt="MacPaw circle"
             className="absolute left-[5px] top-[95px] h-[50px] w-[50px]"
           />
           <img
-            src="/src/assets/images/headline-left-images/ad-blocker.svg"
+            src={adblocker}
             alt="Ad blocker"
             className="absolute left-[80px] top-[96px] h-[92px]"
           />
           <img
-            src="/src/assets/images/headline-left-images/boost-teamwork.svg"
+            src={boostTeamwork}
             alt="Boost teamwork"
             className="absolute left-[10px] top-[220px] w-[170px] h-[110px]"
           />
           <img
-            src="/src/assets/images/headline-left-images/stay-secure.svg"
+            src={staySecure}
             alt="Stay secure"
             className="absolute left-[32px] top-[284px] h-[110px] rotate-[-20deg]"
           />
@@ -38,12 +52,12 @@ const Hero = () => {
           {/* Top logo with background */}
           <div className="relative inline-flex items-center justify-center mb-4 md:mb-6">
             <img
-              src="/src/assets/images/headline-logo-background.svg"
+              src={logoBackground}
               alt="Headline Logo Background"
               className="h-16 w-16 md:h-28 md:w-28"
             />
             <img
-              src="/src/assets/images/headline-logo.svg"
+              src={headlineLogo}
               alt="Headline Logo"
               className="absolute h-9 w-9 md:h-16 md:w-20"
             />
@@ -66,18 +80,10 @@ const Hero = () => {
 
             <div className="inline-flex items-center gap-2 md:gap-3">
               <div className="h-10 w-10 md:h-11 md:w-11 rounded-md border border-white/40 inline-flex items-center justify-center bg-white hover:bg-gray-300 transition-colors cursor-pointer">
-                <img
-                  src="/src/assets/images/apple.svg"
-                  alt="Apple"
-                  className="h-5 w-5"
-                />
+                <img src={apple} alt="Apple" className="h-5 w-5" />
               </div>
               <div className="h-10 w-10 md:h-11 md:w-11 rounded-md border border-white/40 inline-flex items-center justify-center bg-white hover:bg-gray-300 transition-colors cursor-pointer">
-                <img
-                  src="/src/assets/images/google.svg"
-                  alt="Google"
-                  className="h-5 w-5"
-                />
+                <img src={google} alt="Google" className="h-5 w-5" />
               </div>
             </div>
           </div>
@@ -92,27 +98,27 @@ const Hero = () => {
         {/* Right stickers column */}
         <div className="relative hidden md:block pointer-events-none select-none">
           <img
-            src="/src/assets/images/headline-right-images/fix-wifi.svg"
+            src={fixWifi}
             alt="Fix WiFi"
             className="absolute right-[10px] top-[0px] w-[180px] h-[120px]"
           />
           <img
-            src="/src/assets/images/headline-right-images/plan-your-day.svg"
+            src={planYourDay}
             alt="Plan your day"
             className="absolute right-[130px] top-[65px] h-[130px] w-[130px]"
           />
           <img
-            src="/src/assets/images/headline-right-images/converter.svg"
+            src={converter}
             alt="Converter"
             className="absolute right-[40px] top-[160px] h-[100px] w-[100px] z-20"
           />
           <img
-            src="/src/assets/images/headline-right-images/manage-your-mac.svg"
+            src={manageYourMac}
             alt="Manage your mac"
             className="absolute right-[80px] top-[200px] w-[180px] h-[120px]"
           />
           <img
-            src="/src/assets/images/headline-right-images/code-easier.svg"
+            src={codeEasier}
             alt="Code easier"
             className="absolute right-[90px] top-[290px] h-[120px] w-[120px]"
           />
@@ -121,16 +127,8 @@ const Hero = () => {
 
       {/* Mobile creative treatment: two compact badges at bottom */}
       <div className="md:hidden mt-8 flex items-center justify-center gap-3">
-        <img
-          src="/src/assets/images/headline-left-images/boost-teamwork.svg"
-          alt="Boost teamwork"
-          className="h-14"
-        />
-        <img
-          src="/src/assets/images/headline-right-images/plan-your-day.svg"
-          alt="Plan your day"
-          className="h-14"
-        />
+        <img src={boostTeamwork} alt="Boost teamwork" className="h-14" />
+        <img src={planYourDay} alt="Plan your day" className="h-14" />
       </div>
 
       {/* Horizontal separator */}
