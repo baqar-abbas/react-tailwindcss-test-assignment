@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import FeaturesGrid from "../components/FeaturesGrid";
 import TestimonialCarousel from "../components/TestimonialCarousel";
+import SetappCarousal from "../components/SetappCarousal";
 
 const Homepage = () => {
   return (
@@ -8,6 +9,7 @@ const Homepage = () => {
       <Hero />
       <FeaturesGrid />
       <TestimonialCarousel />
+      <SetappCarousal />
     </main>
   );
 };
