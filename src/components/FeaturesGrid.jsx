@@ -42,7 +42,7 @@ const FeaturesGrid = () => {
               Your Setapp journey.
             </h2>
           </div>
-          <div className="flex-1 pt-2 md:pt-4">
+          <div className="flex-1 pt-2">
             <p className="text-white text-base leading-relaxed opacity-90">
               Type in your task into Setapp search and get instant app
               recommendations.
