@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import FeaturesGrid from "../components/FeaturesGrid";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import SetappCarousal from "../components/SetappCarousal";
+import CallToAction from "../components/CallToAction";
 
 const Homepage = () => {
   return (
@@ -10,6 +11,7 @@ const Homepage = () => {
       <FeaturesGrid />
       <TestimonialCarousel />
       <SetappCarousal />
+      <CallToAction />
     </main>
   );
 };
